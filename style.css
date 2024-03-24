@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700");
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background-color: #383838;*/
+    background-color: #383838;
+    font-family: 'Poppins', sans-serif;
+}
+
+.swiper {
+    width: 400px;
+    height: 550px; 
+}
+
+.swiper:nth-child(1) .sliderText {
+    /*background-color: #ef476f;*/
+    background-color: #ef476f;
+
+}
+
+.swiper:nth-child(2) .sliderText {
+    /*background-color: #ffd166;*/
+    background-color: #ffd166;
+}
+
+.swiper:nth-child(3) .sliderText {
+    /*background-color: #06d6a0;*/
+    background-color: #06d6a0;
+}
+
+.swiper:nth-child(4) .sliderText {
+    /*background-color: #118ab2;*/
+    background-color: #118ab2;
+}
+
+.swiper:nth-child(5) .sliderText {
+    /*background-color: #073b4c;*/
+    background-color: #073b4c;
+}
+
+.swiper:nth-child(6) .sliderText {
+    /*background-color: #000000;*/
+    background-color: #262626;
+}
+
+.card {
+    position: relative;
+    background-color: #FFFF;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.swiper:nth-child(1) .card {
+    background-color: #ffe0e7;
+}
+
+.swiper:nth-child(2) .card {
+    background-color: #fff3d6;
+}
+
+.swiper:nth-child(3) .card {
+    background-color: #d6fff4;
+}
+
+.swiper:nth-child(4) .card {
+    background-color: #d7f5ff;
+}
+
+.swiper:nth-child(5) .card {
+    background-color: #d0f4ff;
+}
+
+.swiper:nth-child(6) .card {
+    background-color: #F7F9F9;
+}
+
+.card .content {
+    widows: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.sliderText {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+}
+
+.sliderText h3 {
+    color: #FFFF;
+    font-size: 3em;
+}
+
+.content a {
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #262626;
+    color: #262626;
+    font-weight: 600;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 250%;
+    border: 0px solid #5BBE42;
+    margin-top: 30px;
+    
+}

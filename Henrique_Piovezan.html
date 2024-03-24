@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700");
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /*background-color: #383838;*/
+            background-color: #383838;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .swiper {
+            width: 100%; /* Alterando para porcentagem */
+            width: 100%; /* Alterando para porcentagem */
+            height: auto; /* Altura automática para ajustar ao conteúdo */
+            max-height: 100%; /* Limitando a altura máxima */
+        }
+
+        .swiper:nth-child(1) .sliderText {
+        /*background-color: #073b4c;*/
+        background-color: #073b4c;
+        }
+
+        .card {
+            position: relative;
+            background-color: #FFFF;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .swiper:nth-child(1) .card {
+         background-color: #d0f4ff;
+        }
+
+        .card .content {
+            width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            word-wrap: break-word; /* Adicionando esta propriedade para que o texto seja quebrado em várias linhas se necessário */
+        }
+
+
+        .sliderText {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        .sliderText h3 {
+            color: #FFFF;
+            font-size: 2.2em;
+        }
+
+        .content a {
+            display: inline-block;
+            margin: 10px 0 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid #262626;
+            color: #262626;
+            font-weight: 600;
+        }
+
+        .imgPhoto{
+            width: 20vw; /* Usando vw para largura responsiva */
+            max-width: 110px; /* Limitando a largura máxima */
+            height: auto; /* Altura automática para manter a proporção */
+            border-radius: 50%;
+            border: 5px  solid #FFFF;
+            margin: 5vh ;/* Usando vh para margem responsiva */
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+        }
+
+        .footer a {
+            margin: 0 10px; /* Adicione margens entre os ícones se desejar */
+            color: #262626;
+            text-decoration: none;
+            font-weight: 600;        
+        }
+
+
+    </style>
+    <title>Henrique Piovezan</title>
+</head>
+
+<body>
+    <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="200"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <!--
+        - swiper-container class="mySwiper" 
+        - pagination="false" Desabilita a paginação 
+        - effect="coverflow" Define o efeito de transição dos slides como "coverflow"
+        - grab-cursor="true" Ativa o cursor de agarrar, permitindo ao usuário arrastar os slides 
+        - centered-slides="true"  Centraliza os slides 
+        - slides-per-view="auto"  Define o número de slides visíveis por vez com base no espaço disponível 
+        - coverflow-effect-rotate="50"  Define a rotação dos slides no efeito "coverflow" 
+        - coverflow-effect-stretch="0"  Define o alongamento dos slides no efeito "coverflow" 
+        - coverflow-effect-depth="200"  Define a profundidade do efeito "coverflow" 
+        - coverflow-effect-modifier="1"  Define o modificador do efeito "coverflow"
+        - coverflow-effect-slide-shadows="true"  Ativa as sombras dos slides no efeito "coverflow"
+        - Observação:
+        Dentro do swiper-container, devem ser adicionados os slides 
+        Você pode adicionar os slides individualmente 
+        -->
+
+        <swiper-slide class="swiper">
+            <div class="card">
+                <div class="sliderText">
+                    <img src="/img/Henrique_Piovezan.jpg" class="imgPhoto">
+                    <h3>Henrique<br>Piovezan</h3>
+                </div>
+                <div class="content">
+                        <h3>
+                        Analista de dados <br><br>
+                        </h3>
+
+                        <h4>Sobre mim</h4>
+                        <p>
+                            Atualmente, estou no segundo semestre do curso de Análise e Desenvolvimento de Sistemas, onde tenho a oportunidade de aprimorar minhas habilidades técnicas e de resolução de problemas. Sou uma pessoa comunicativa e apaixonada por desafios, o que me motiva a colaborar em equipe e buscar soluções inovadoras. Além disso, mantenho uma postura proativa em todas as minhas atividades, garantindo que as responsabilidades sejam cumpridas de forma eficiente e pontual. Tenho experiência na execução de planilhas e na elaboração de relatórios, demonstrando comprometimento e organização em todas as etapas do processo.
+                        </p>
+
+                        <h4>Formação</h4>
+                        <p>
+                        - Análise e Desenvolvimento de Sistemas, (Universidade Cruzeiro do Sul, 2022 – 2024).<br>
+                        </p>
+
+                        <h5>Habilidades e Competências</h5>
+                        <p>                   
+                        - Pacote Office intermediário<br>
+                        - Inglês intermediário .<br>
+                        - Power BI intermediário <br>
+                        - HTML e CSS.<br>
+                        - Curioso <br>
+                        </p>
+                        
+                        <h4>Interesses</h4>
+                        <p>
+                        - Desenvolvimento Front-End.<br>
+                        - Desenvolvimento Mobile.<br>
+                        - Prototipação de Interfaces.<br>
+                        - Web Design.<br>
+                        - Java.<br>
+                        </p>
+
+                        <h4>Experiência</h4>
+
+                        <strong>
+                        <p>
+                        Lew'lara tbwa<br>
+                        2022- ATUAL<br>
+                        ESTAGIÁRIO DE BI<br><br>
+                        </strong>
+                       
+                        - Atuação nas contas de Camil, Coqueiro, União, Tirolez, Friboi,
+                        Piraquê, Vitarella.<br>
+                        - Realização da montagem de dashs via Power BI.<br>
+                        - Extração de dados via Supermetrics. <br>
+                        </p>
+
+                        <strong>
+                            <p>
+                            Jeunesse<br>
+                            2021 - 2022<br>
+                            ANALISTA DE ATENDIMENTO AO CLIENTE<br><br>
+                            </strong>
+                           
+                            - Auxílio ao cliente via chat e telefone.<br>
+                            - Resolução de problemas de compra via site.<br>
+                            - Apoio a coordenação ao levantamento de dados e atualização de
+                            cliente. <br>
+                            </p>
+
+                    
+                        <a href="index.html">
+                         Voltar 
+                        </a>
+
+                </div>
+                
+
+                    <footer class="footer">
+                        <a href="https://www.linkedin.com/in/henrique-piovezan-2465b5215">
+                            <img src="img/linkedin.svg" alt="LinkedIn"> LinkedIn 
+                        </a>
+                    
+                    </footer>
+
+
+            </div>
+        </swiper-slide>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js">
+        /** framework usado 
+         * Swiper Custom Element 9.4.1
+         * Most modern mobile touch slider and framework with hardware accelerated transitions
+         * https://swiperjs.com
+         * Copyright 2014-2023 Vladimir Kharlampidi
+         * Released under the MIT License
+         * Released on: June 13, 2023
+         */
+    </script>
+</body>
+</html>

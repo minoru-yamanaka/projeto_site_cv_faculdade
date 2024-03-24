@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700");
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /*background-color: #383838;*/
+            background-color: #383838;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .swiper {
+            width: 100%; /* Alterando para porcentagem */
+            width: 100%; /* Alterando para porcentagem */
+            height: auto; /* Altura automática para ajustar ao conteúdo */
+            max-height: 100%; /* Limitando a altura máxima */
+        }
+
+        .swiper:nth-child(1) .sliderText {
+        background-color: #ffd166;
+        }
+
+        .card {
+            position: relative;
+            background-color: #FFFF;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .swiper:nth-child(1) .card {
+        background-color: #fff3d6;
+        }
+
+        .card .content {
+            width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            word-wrap: break-word; /* Adicionando esta propriedade para que o texto seja quebrado em várias linhas se necessário */
+        }
+
+
+        .sliderText {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffd166;
+        }
+
+        .sliderText h3 {
+            color: #FFFF;
+            font-size: 2.2em;
+        }
+
+        .content a {
+            display: inline-block;
+            margin: 10px 0 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid #262626;
+            color: #262626;
+            font-weight: 600;
+        }
+
+        .imgPhoto{
+            width: 20vw; /* Usando vw para largura responsiva */
+            max-width: 110px; /* Limitando a largura máxima */
+            height: auto; /* Altura automática para manter a proporção */
+            border-radius: 50%;
+            border: 5px  solid #FFFF;
+            margin: 5vh ;/* Usando vh para margem responsiva */
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+        }
+
+        .footer a {
+            margin: 0 10px; /* Adicione margens entre os ícones se desejar */
+            color: #262626;
+            text-decoration: none;
+            font-weight: 600;        
+        }
+
+
+    </style>
+    <title>Nycollas Meneses</title>
+</head>
+
+<body>
+    <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="200"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <!--
+        - swiper-container class="mySwiper" 
+        - pagination="false" Desabilita a paginação 
+        - effect="coverflow" Define o efeito de transição dos slides como "coverflow"
+        - grab-cursor="true" Ativa o cursor de agarrar, permitindo ao usuário arrastar os slides 
+        - centered-slides="true"  Centraliza os slides 
+        - slides-per-view="auto"  Define o número de slides visíveis por vez com base no espaço disponível 
+        - coverflow-effect-rotate="50"  Define a rotação dos slides no efeito "coverflow" 
+        - coverflow-effect-stretch="0"  Define o alongamento dos slides no efeito "coverflow" 
+        - coverflow-effect-depth="200"  Define a profundidade do efeito "coverflow" 
+        - coverflow-effect-modifier="1"  Define o modificador do efeito "coverflow"
+        - coverflow-effect-slide-shadows="true"  Ativa as sombras dos slides no efeito "coverflow"
+        - Observação:
+        Dentro do swiper-container, devem ser adicionados os slides 
+        Você pode adicionar os slides individualmente 
+        -->
+
+        <swiper-slide class="swiper">
+            <div class="card">
+                <div class="sliderText">
+                    <img src="/img/Nycollas_Meneses.jpg" class="imgPhoto">
+                    <h3>Nycollas<br>Meneses</h3>
+                </div>
+                <div class="content">
+                        <h3>
+                        Desenvolvedor Front-end e Web-design <br><br>
+                        </h3>
+
+                        <h4>Sobre mim</h4>
+                        <p>
+                            Sou um profissional apaixonado por tecnologia, atualmente cursando o último ano de Análise e Desenvolvimento de Sistemas aos 21 anos. Minha trajetória é marcada por uma sólida experiência em diversas áreas, destacando-me como um desenvolvedor versátil e dedicado.<br>
+
+                            Minha expertise em Python abrange desde o desenvolvimento de robôs para automação até a análise de dados para a identificação de novas variáveis de crédito. No contexto financeiro, destaco minha habilidade na verificação de renda e na prevenção de fraudes, aplicando técnicas avançadas para garantir a segurança e a integridade dos processos.<br>
+
+                            Minha jornada também inclui experiência no atendimento ao cliente, onde desenvolvi habilidades interpessoais essenciais. Além disso, minha familiaridade com o desenvolvimento de ERPs e a importação de XML demonstram minha capacidade de enfrentar desafios complexos no âmbito da programação.<br>
+
+                            Com conhecimento sólido em front-end, incluindo HTML e CSS, sou capaz de criar interfaces intuitivas e atraentes. Essa combinação de habilidades técnicas e conhecimento prático me permite abordar projetos de maneira abrangente, desde a concepção até a implementação.<br>
+
+                            Estou entusiasmado com a perspectiva de contribuir com minha paixão e conhecimento para desafios futuros, almejando crescimento profissional contínuo. Minha juventude é um ativo que impulsiona minha criatividade e abertura para aprendizado constante.<br>
+
+                            Estou aberto a oportunidades que me permitam aplicar e expandir meu conjunto de habilidades, contribuindo para o sucesso de projetos inovadores e desafiadores.<br>
+                        </p>
+
+                        <h4>Formação</h4>
+                        <p>
+                          - HTML AVANÇADO<br>
+                          - SQL - Udemy<br>
+                          - PHYTON - Udemy<br>
+                          - JAVASCRIPT - Udemy<br>
+                        </p>
+
+                        <h4>Habilidades e Competências</h4>
+                        <p>    
+                        -  Facilidade em aprender coisas novas<br>
+                        -  Trabalho bem sucedido em um ambiente de equipe, bem como de forma independente<br>
+                        -   Capaz de trabalhar sob pressão e multitarefa<br>
+                        -   Capaz de seguir instruções e entregar resultados com qualidade <br>
+                        
+                        </p>
+                        
+                        <h4>Interesses</h4>
+                        <p>
+                        - Desenvolvimento Front-End.<br>
+                        - Desenvolvimento Mobile.<br>
+                        - Prototipação de Interfaces.<br>
+                        - Web Design.<br>
+                        - Java.<br>
+                        </p>
+
+                        <h4>Experiência</h4>
+
+                        <strong>
+                        <p>
+                        COMPILA SOLUÇÕES EM TECNOLOGIAS<br>
+                        SET 2023- ATUAL<br>
+                        Estagiario em Desenvolvimento<br><br>
+                        </strong>
+                       
+                        - Desenvolvimento de robos para automatizações de processos.<br>
+                        - Descenvolvimento utilizando IA para automatizar processos ERP.<br>
+                        - Importação de XML. <br>
+                        - Desenvolvimento Back-end.<br><br>
+
+                        <strong>
+                            ANALISE DE DADOS E CORRESPONDENTE<br>
+                            BANCARIO LTDA<br>
+                            JUN 2022- JUL 2023<br>
+                            Customer Support PL<br><br>
+                        </strong>
+
+                        - Acompanhamento do fluxo de mensagens recebidas<br>
+                        - Auxiliar clientes na instalação do aplicativo via CHAT/VOZ<br>
+                        - Realizar a comprovação de renda dos clientes<br>
+                        - Realizar o levantamento de dados para o produto novo da empresa<br>
+                        - Verificação anti-fraude dos clientes na mesa<br>
+                        - Implementar o passo a passo de todo o contato do cliente com CHATBOT<br>
+                        - Desenvolvimento de novas variáveis de crédito com análise no banco de dados<br>
+                        - Implementação do novo aplicativo de garantia<br><br>
+                        </p>
+                    
+                        <a href="index.html">
+                         Voltar 
+                        </a>
+
+                </div>
+                
+
+                    <footer class="footer">
+                        <a href="https://www.linkedin.com/in/nycollas-meneses-9963741a2">
+                            <img src="img/linkedin.svg" alt="LinkedIn"> LinkedIn 
+                        </a>
+                    
+                        <a href="https://minoru-yamanaka.github.io/cv/">
+                            <img src="img/github.svg" alt="GitHub"> GitHub
+                        </a>
+                    </footer>
+
+
+            </div>
+        </swiper-slide>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js">
+        /** framework usado 
+         * Swiper Custom Element 9.4.1
+         * Most modern mobile touch slider and framework with hardware accelerated transitions
+         * https://swiperjs.com
+         * Copyright 2014-2023 Vladimir Kharlampidi
+         * Released under the MIT License
+         * Released on: June 13, 2023
+         */
+    </script>
+</body>
+</html>

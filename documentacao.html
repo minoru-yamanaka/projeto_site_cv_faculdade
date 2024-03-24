@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700");
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /*background-color: #383838;*/
+            background-color: #383838;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .swiper {
+            width: 100%; /* Alterando para porcentagem */
+            width: 100%; /* Alterando para porcentagem */
+            height: auto; /* Altura automática para ajustar ao conteúdo */
+            max-height: 100%; /* Limitando a altura máxima */
+        }
+
+        .swiper:nth-child(1) .sliderText {
+        /*background-color: #000000;*/
+        background-color: #262626;
+        }
+
+        .card {
+            position: relative;
+            background-color: #FFFF;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .swiper:nth-child(1) .card {
+         background-color:  #F7F9F9;
+        }
+
+        .card .content {
+            width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            word-wrap: break-word; /* Adicionando esta propriedade para que o texto seja quebrado em várias linhas se necessário */
+        }
+
+
+        .sliderText {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        .sliderText h3 {
+            color: #FFFF;
+            font-size: 2.2em;
+        }
+
+        .content a {
+            display: inline-block;
+            margin: 10px 0 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid #262626;
+            color: #262626;
+            font-weight: 600;
+        }
+
+        .imgPhoto{
+            width: 20vw; /* Usando vw para largura responsiva */
+            max-width: 110px; /* Limitando a largura máxima */
+            height: auto; /* Altura automática para manter a proporção */
+            border-radius: 50%;
+            border: 5px  solid #FFFF;
+            margin: 5vh ;/* Usando vh para margem responsiva */
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+        }
+
+        .footer a {
+            margin: 0 10px; /* Adicione margens entre os ícones se desejar */
+            color: #262626;
+            text-decoration: none;
+            font-weight: 600;        
+        }
+
+        .BoxCollors {
+            width: 20%;
+            height: 25%;
+            float:left;
+            margin: 1px;
+            padding: 5px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .BoxCollors {
+                width: 100%;
+                height: 10%; /* Altera para 400px de altura quando a largura da tela for menor que 768px */
+            }
+        }
+
+        .FormatoExemplo{
+            border: 2px solid #262626;
+            padding: 2%;
+            width: 76%;
+
+        }
+
+    </style>
+    <title>Documentação</title>
+</head>
+
+<body>
+    <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="200"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <!--
+        - swiper-container class="mySwiper" 
+        - pagination="false" Desabilita a paginação 
+        - effect="coverflow" Define o efeito de transição dos slides como "coverflow"
+        - grab-cursor="true" Ativa o cursor de agarrar, permitindo ao usuário arrastar os slides 
+        - centered-slides="true"  Centraliza os slides 
+        - slides-per-view="auto"  Define o número de slides visíveis por vez com base no espaço disponível 
+        - coverflow-effect-rotate="50"  Define a rotação dos slides no efeito "coverflow" 
+        - coverflow-effect-stretch="0"  Define o alongamento dos slides no efeito "coverflow" 
+        - coverflow-effect-depth="200"  Define a profundidade do efeito "coverflow" 
+        - coverflow-effect-modifier="1"  Define o modificador do efeito "coverflow"
+        - coverflow-effect-slide-shadows="true"  Ativa as sombras dos slides no efeito "coverflow"
+        - Observação:
+        Dentro do swiper-container, devem ser adicionados os slides 
+        Você pode adicionar os slides individualmente 
+        -->
+
+        <swiper-slide class="swiper">
+            <div class="card">
+                <div class="sliderText">
+                    <img src="/img/perfil2.jpg" class="imgPhoto">
+                    <h3> Documentação do projeto</h3>
+                </div>
+                <div class="content">
+                        <h3>
+                        Desenvolvedor Front-end e Web-design <br><br>
+                        </h3>
+
+                        <h4>Introdução</h4>
+                        <p>
+                            "Este documento é o guia definitivo da identidade visual do nosso site, resultado de uma jornada criativa intensa e inspiradora desde o brainstorming inicial."
+
+                        </p>
+
+                        <h4>Cores</h4>
+
+                        <p>
+                            <strong>Paleta de Cores - RGB e CMYK</strong><br><br>
+                            "Explore com entusiasmo nossa vibrante Paleta de Cores - RGB e CMYK! Desvende abaixo as tonalidades harmoniosas que impulsionaram este projeto: Não se preocupe se notar pequenas mudanças nos tons ao passar para o espaço CMYK; isso é completamente natural e parte da diversidade de espaços de cores!"<br><br>
+                        </p>     
+                                <div style="background-color: #ef476f;" class="BoxCollors">
+                                    #ef476f
+                                    <br>RGB: 239 071 111
+                                    <br>CMYK: 0, 70, 54, 6
+                                    <br>PANTONE
+                                    <br>18-1755 TCX
+                                    <br>Rouge Red
+                                </div>
+
+                                <div style="background-color: #ffe0e7;"class="BoxCollors">
+                                    #ffe0e7
+                                    <br>RGB: 255 224 231 
+                                    <br>CMYK: 0, 12, 9, 0
+                                    <br>PANTONE
+                                    <br>12-1310 TCX
+                                    <br>Blushing Bride
+                                </div>
+
+                                <div style="background-color: #ffd166;"class="BoxCollors">
+                                    #ffd166
+                                    <br>RGB: 255 209 102
+                                    <br>CMYK: 0, 18, 60, 0
+                                    <br>PANTONE
+                                    <br>14-0851 TCX
+                                    <br>Samoan Sun
+                                </div>
+
+                                <div style="background-color: #fff3d6;" class="BoxCollors">
+                                    #fff3d6
+                                    <br>RGB: 255 243 214 
+                                    <br>CMYK: 0, 5, 16, 0
+                                    <br>PANTONE
+                                    <br>11-0515 TCX
+                                    <br>Lemon Icing
+                                </div>
+
+                                <div style="background-color: #06d6a0;" class="BoxCollors">
+                                    #06d6a0
+                                    <br>RGB: 006 214 160
+                                    <br>CMYK: 97, 0, 25, 16
+                                    <br>PANTONE
+                                    <br>14-6040 TCX
+                                    <br>Spring Bouquet
+                                </div>
+
+                                <div style="background-color: #d6fff4;" class="BoxCollors">
+                                    #d6fff4
+                                    <br>RGB: 214 255 244
+                                    <br>CMYK: 16, 0, 4, 0
+                                    <br>PANTONE
+                                    <br>12-5209 rcx
+                                    <br>Soothing Sea
+                                </div>
+
+                                <div style="background-color: #118ab2;"class="BoxCollors">
+                                    #118ab2
+                                    <br>RGB: 017 138 178 
+                                    <br>CMYK: 90, 22, 0, 30
+                                    <br>PANTONE
+                                    <br>17-4432 TCX
+                                    <br>Vivid Blue
+                                </div>
+
+                                <div style="background-color: #d7f5ff;"class="BoxCollors">
+                                    #d7f5ff
+                                    <br>RGB: 215 245 255 
+                                    <br>CMYK: 16, 4, 0, 0
+                                    <br>PANTONE
+                                    <br>12-4604 TCX
+                                    <br>Skylight
+                                </div>
+
+                                <div style="background-color: #073b4c;"class="BoxCollors">
+                                    #073b4c 
+                                    <br>RGB: 007 059 076
+                                    <br>CMYK: 91, 22, 0, 70
+                                    <br>PANTONE
+                                    <br>19-4326 TCX
+                                    <br>Reflecting Pond
+                                </div>
+
+                                <div style="background-color: #d0f4ff;"class="BoxCollors">
+                                    #d0f4ff
+                                    <br>RGB: 208 244 255 
+                                    <br>CMYK: 18, 4, 0, 0
+                                    <br>PANTONE
+                                    <br>12-4604 TCX
+                                    <br>Skylight
+                                </div>
+
+                                <div style="background-color: #262626;"class="BoxCollors">
+                                    #262626
+                                    <br>RGB: 38, 38, 38
+                                    <br>CMYK: 3, 3, 0, 15
+                                    <br>PANTONE
+                                    <br>19-4008 TCX
+                                    <br>Meteorite
+                                </div>
+
+                                <div style="background-color: #d1d1d8;"class="BoxCollors">
+                                    #d1d1d8
+                                    <br>RGB: 209, 209, 216
+                                    <br>CMYK: 0, 0, 0, 85
+                                    <br>PANTONE
+                                    <br>13-4105 TCX
+                                    <br>Lilac Hint
+                                    </div>
+
+                                <div style="background-color: #FFFF;"class="BoxCollors">
+                                    Cor de título
+                                    #FFFF
+                                    <br>RGB: 255, 243, 214
+                                    <br>CMYK: 0, 0, 0, 85
+                                    <br>PANTONE
+                                    <br>11-0601 TCX
+                                    <br>Bright White
+                                    </div>
+                                
+                                <div style="background-color: #262626;"class="BoxCollors">
+                                    Cor de texto
+                                    #262626
+                                    <br>RGB: 38, 38, 38
+                                    <br>CMYK: 3, 3, 0, 15
+                                    <br>PANTONE
+                                    <br>19-4008 TCX
+                                    <br>Meteorite
+                                </div>
+
+                                <div style="background-color: #383838;"class="BoxCollors"; >
+                                    Cor de fundo
+                                    #383838
+                                    <br>RGB: 56, 56, 56
+                                    <br>CMYK: 0, 5, 16, 0
+                                    <br>PANTONE
+                                    <br>19-4305 X
+                                    <br>Pirate Black
+                                </div>
+
+                                <!-- caixa vazia-->
+                            <div style="clear: both;"></div> 
+
+                        <br>
+
+                        <div class="FormatoExemplo">   
+                            
+                            <h4>Tipografia</h4>
+                            <p>                                    
+                                Optamos por uma tipografia simples e sóbria para o site, adotando o estilo Poppins para alinhar com nossa visão para o projeto. Essa escolha resultou em um design moderno e minimalista, que sutilmente se harmonizou em todas as páginas, como você poderá observar ao explorar. É importante ressaltar que essa tipografia foi utilizada na elaboração do nosso site, contribuindo significativamente para o seu visual. <br> 
+                        
+                                Exemplo de formatação:<br>
+                                <br> 
+                            </p>
+
+                                Poppins
+                                <br> 0123456789
+                                <br> abcdefghijklmnopqrstuvwxyz
+                                <br> ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                                <br> <span style="font-family: Poppins; font-weight: bold;">Titulo Poppins Bold</span>
+                                <br><span style="font-family: Poppins; font-weight: normal;">Titulo Poppins Regular</span>
+                                <br><span style="font-family: Poppins; font-weight: lighter;">Titulo Poppins Light</span>
+                        </div>
+
+                        <h4>Nota</h4>
+                        <p>"Aperte aqui e dê uma olhada no 'CHANGELOG', onde guardamos todas as travessuras que fizemos no nosso projeto de portfólio comunitário. Prepare-se para algumas risadas!" </p>
+                            <a href="CHANGELOG.md">CHANGELOG.md</a>
+
+                            <h4>Equipe</h4>
+                        <p>
+                            RGM: 31750630 Henrique Piovezan Cláudio     
+                            <br>RGM: 31011063 Bianca Ferreira Murashige 
+                            <br>RGM: 31186963 Nycollas Meneses De Souza 
+                            <br>RGM: 31156525 Nicholas Novetti Linacre  
+                            <br>RGM: 31095976 Paulo Minoru Yamanaka  	  
+                        </p>
+                    
+                        <a href="index.html">
+                         Voltar 
+                        </a>
+
+                </div>
+                
+
+                    <footer class="footer">
+                        <a href="https://www.linkedin.com/in/minoru-yamanaka-2272a6243">
+                            <img src="img/linkedin.svg" alt="LinkedIn"> LinkedIn 
+                        </a>
+                    
+                        <a href="https://minoru-yamanaka.github.io/cv/">
+                            <img src="img/github.svg" alt="GitHub"> GitHub
+                        </a>
+                    </footer>
+
+
+            </div>
+        </swiper-slide>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js">
+        /** framework usado 
+         * Swiper Custom Element 9.4.1
+         * Most modern mobile touch slider and framework with hardware accelerated transitions
+         * https://swiperjs.com
+         * Copyright 2014-2023 Vladimir Kharlampidi
+         * Released under the MIT License
+         * Released on: June 13, 2023
+         */
+    </script>
+</body>
+</html>
