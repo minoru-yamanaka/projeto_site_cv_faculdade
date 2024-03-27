@@ -60,7 +60,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: black;
+            background-color: #06d6a0;
         }
 
         .sliderText h3 {
@@ -100,33 +100,52 @@
             font-weight: 600;        
         }
 
+        /* nav bar */
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #06d6a0; /* Cor inicial da barra de navegação */
+            text-align: center; /* Centraliza os links na barra de navegação */
+        }
+
+        nav ul li {
+            display: inline; /* Exibe os itens da lista em linha */
+            margin-right: 10px; /* Espaçamento entre os itens da lista */
+        }
+
+        nav ul li:last-child {
+            margin-right: 0; /* Remove o espaçamento do último item da lista */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff; /* Cor inicial dos links */
+            padding: 10px 20px; /* Espaçamento interno dos links */
+        }
+
+        nav ul li a:hover {
+            background-color: #d6fff4; /* Cor de fundo ao passar o mouse sobre os links */
+            color: #06d6a0;
+        }
 
     </style>
     <title>Minoru Yamanaka</title>
 </head>
 
 <body>
-    <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
-    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="200"
-    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
-        <!--
-        - swiper-container class="mySwiper" 
-        - pagination="false" Desabilita a paginação 
-        - effect="coverflow" Define o efeito de transição dos slides como "coverflow"
-        - grab-cursor="true" Ativa o cursor de agarrar, permitindo ao usuário arrastar os slides 
-        - centered-slides="true"  Centraliza os slides 
-        - slides-per-view="auto"  Define o número de slides visíveis por vez com base no espaço disponível 
-        - coverflow-effect-rotate="50"  Define a rotação dos slides no efeito "coverflow" 
-        - coverflow-effect-stretch="0"  Define o alongamento dos slides no efeito "coverflow" 
-        - coverflow-effect-depth="200"  Define a profundidade do efeito "coverflow" 
-        - coverflow-effect-modifier="1"  Define o modificador do efeito "coverflow"
-        - coverflow-effect-slide-shadows="true"  Ativa as sombras dos slides no efeito "coverflow"
-        - Observação:
-        Dentro do swiper-container, devem ser adicionados os slides 
-        Você pode adicionar os slides individualmente 
-        -->
-
-        <swiper-slide class="swiper">
+    <swiper-slide>
+        <nav>
+            <ul>
+                <li><a href="Bianca_Murashige.html">Bianca Murashige</a></li>
+                <li><a href="Nycollas_Meneses.html">Nycollas Meneses</a></li>
+                <li><a href="minoru_yamanaka.html">Minoru Yamanaka</a></li>
+                <li><a href="Nicholas_Novetti.html">Nicholas Novetti</a></li>
+                <li><a href="Henrique_Piovezan.html">Henrique Piovezan</a></li>
+                <li><a href="documentacao.html">Documentação</a></li>
+            </ul>
+        </nav>
             <div class="card">
                 <div class="sliderText">
                     <!-- <img src="img/perfil2.png" class="imgPhoto"> -->
@@ -199,17 +218,5 @@
 
             </div>
         </swiper-slide>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js">
-        /** framework usado 
-         * Swiper Custom Element 9.4.1
-         * Most modern mobile touch slider and framework with hardware accelerated transitions
-         * https://swiperjs.com
-         * Copyright 2014-2023 Vladimir Kharlampidi
-         * Released under the MIT License
-         * Released on: June 13, 2023
-         */
-    </script>
 </body>
 </html>
