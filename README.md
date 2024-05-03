@@ -1,6 +1,6 @@
 # projeto_site_cv_faculdade
 
-Para criar [site](https://minoru-yamanaka.github.io/projeto_site_cv_faculdade/), foram utilizados os seguintes recursos e tecnologias:
+Para criar [site]( https://minoru-yamanaka.github.io/projeto_site_cv_faculdade.github.io/), foram utilizados os seguintes recursos e tecnologias:
 
 1. **HTML (HyperText Markup Language)**:
    - Utilizado para estruturar o conteúdo do site, definindo elementos como cabeçalho, parágrafos, links e divs.
